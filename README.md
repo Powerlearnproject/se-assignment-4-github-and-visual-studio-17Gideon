@@ -85,8 +85,7 @@ jobs:
         if: success()
         run: |
           ssh-keyscan ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-          scp -r ./dist/* ${{ secrets.USER }}@${{ secrets.HOST }}:~/app/
-
+    
 Introduction to Visual Studio:
 
 What is Visual Studio, and what are its key features? How does it differ from Visual Studio Code?
